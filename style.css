@@ -54,7 +54,7 @@ section .sobre{
     right: -450;
     width: 1000px;
     height: 1000px;
-    border-radius: 100%;
+   border-top-left-radius: 55%;
     background-color: #017143;
     left: 60%;
     margin-top: 150px;
@@ -82,9 +82,9 @@ section .sobre{
 .texto-sobre p{
     margin: 20px 0;
     color: black;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: bold;
-    max-width: 700px;
+    max-width: 600px;
 }
 .texto-sobre button{
     border: 0;
