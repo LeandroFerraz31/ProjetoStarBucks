@@ -31,16 +31,25 @@ header .menu {
 }
 
 .menu {
-    padding-top: 10px; /* Alterado para um valor menor para melhorar a aparência */
-    width: 100%; /* Alterado para 100% para se ajustar ao contêiner */
-    text-align: center; /* Alterado para centralizar o texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 .menu a {
     color: black;
-    display: inline-block; /* Alterado para inline-block para melhorar a aparência */
-    font-size: bold; /* Corrigido para font-weight: bold */
-    margin-right: 20px; /* Alterado para um valor menor para melhorar a aparência */
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #017143;
 }
 
 section .sobre {
