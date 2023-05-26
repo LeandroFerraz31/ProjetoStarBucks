@@ -1,45 +1,59 @@
-<!DOCTYPE html> 
- <html lang="en"> 
- <head> 
-     <meta charset="UTF-8"> 
-     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> 
-     <link rel="stylesheet" href="style.css"> 
-     <title>StarBucks Coffee</title> 
- </head> 
- <body> 
-     <header> 
-         <div class="center"> 
-             <div class="logo"><img src="assets/logo.png" alt=""><!--logo--> 
-             <div class="menu"> 
-                 <a href="#">Home</a> 
-                 <a href="#">About</a> 
-                 <a href="#">Menu</a> 
-                 <a href="#">What's New</a> 
-             </div><!--menu--> 
-             </div><!--center--> 
-             </div> 
-     </header> 
-      
-     <section class="sobre"> 
-         <div class="extras"> 
-             <img src="assets/img1.png" alt=""> 
-             <div class="social-media"> 
-                 <a href=""><img src="assets/facebook.png" alt=""></a> 
-                 <a href=""><img src="assets/instagram.png" alt=""></a> 
-                 <a href=""><img src="assets/twitter.png" alt=""></a> 
-             </div> 
-         </div><!--extras--> 
-         <div class="center"> 
-             <div class="texto-sobre"> 
-                 <h1>It's not just Coffee<br>It's <span style="color:#017143;">StarBucks</span></h1> 
-                 <p>Starbucks is not just a coffee shop. After all, she sells an experience in a cozy, airy environment, with comfortable lighting and internet connection. Thus, when customers enter any store in the world, they expect good service.</p> 
-                 <button>Learn More</button> 
-  
-             </div> 
-  
-         </div> 
-     </section> 
-      
- </body> 
- </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;900&display=swap" rel="stylesheet">
+    <title>StarBucks Coffee</title>
+</head>
+
+<body>
+    <header>
+        <div class="center">
+
+            <div class="logo"><img src="/image/logo.png" alt=""><!--logo-->
+
+                <div class="menu">
+                    <img src="./images/thumb1.png" class="botao-menu"
+                        onclick="trocaImagem('./images/img1.png'); trocaCor('#017143')">
+                    <img src="./images/thumb2.png" class="botao-menu"
+                        onclick="trocaImagem('./images/img2.png'); trocaCor('#eb7495')">
+                    <img src="./images/thumb3.png" class="botao-menu"
+                        onclick="trocaImagem('./images/img3.png'); trocaCor('#d752b1')">
+                </div><!--menu-->
+
+            </div><!--center-->
+        </div>
+    </header>
+
+    <section class="sobre">
+        <div class="extras">
+            <img src="/image/img1.png" alt="">
+            <div class="social-media">
+                <a href=""><img src="assets/facebook.png" alt=""></a>
+                <a href=""><img src="assets/instagram.png" alt=""></a>
+                <a href=""><img src="assets/twitter.png" alt=""></a>
+            </div>
+        </div><!--extras-->
+        <div class="center">
+            <div class="texto-sobre">
+                <h1>It's not just Coffee<br>It's <span style="color:#017143;">StarBucks</span></h1>
+                <p>Starbucks is not just a coffee shop. After all, she sells an experience in a cozy, airy environment,
+                    with comfortable lighting and internet connection. Thus, when customers enter any store in the
+                    world, they expect good service.</p>
+                <button>Learn More</button>
+
+            </div>
+
+        </div>
+    </section>
+
+</body>
+<script src="./scripts.js"></script>
+
+</html>
