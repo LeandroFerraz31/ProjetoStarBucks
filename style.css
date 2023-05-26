@@ -30,7 +30,9 @@ body {
   width: 600px;
   display: flex;
   justify-content: flex-end;
-  margin-top: 250px;
+  margin-top: 150px;
+  
+  
 }
 
 .menu {
@@ -100,9 +102,9 @@ button:hover {
   width: 100%;
   height: 100%;
   background: rgb(1, 113, 67);
-  top: 0;
+  top: 10;
   left: 0;
-  clip-path: circle(600px at right 800px);
+  clip-path: circle(399px at right 500px);
   z-index: -1;
 }
 
@@ -131,14 +133,32 @@ footer {
   }
 
   .container {
-    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .texto-sobre,
   .copo-imagem {
-    width: 100%;
-    max-width: 800px;
+   width: 100%;
+    max-width: 600px;
+    justify-content: center;
+    margin-top: 0;
+    transition: 1s;
+    transform: translateY(-2px)
+    
+    
   }
+  .texto-sobre {
+    margin-bottom: 20px;
+  }
+  .circulo {
+ 
+    width: 100%;
+    height: 100%;
+    top: 300px;
+    left: 0;
+    clip-path: circle(250px at center 420px);
+  
+}
 
   h1 {
     font-size: 40px;
@@ -158,6 +178,84 @@ footer {
 }
 
 @media (max-width: 576px) {
+  
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copo-imagem {
+   width: 100%;
+    max-width: 600px;
+    justify-content: center;
+    margin-top: 0;
+    transition: 1s;
+    transform: translateY(-2px)
+    
+    
+  }
+  .texto-sobre {
+    margin-bottom: 20px;
+  }
+  .circulo {
+ 
+    width: 100%;
+    height: 100%;
+    top: 300px;
+    left: 0;
+    margin:20px;
+    clip-path: circle(250px at center 355px);
+  
+}
+  .botao-menu{
+    margin:20px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+
+  span {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  
+   .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copo-imagem {
+   width: 100%;
+    max-width: 600px;
+    justify-content: center;
+    margin-top: 0;
+    transition: 1s;
+    transform: translateY(-2px)
+    
+    
+  }
+  .texto-sobre {
+    margin-bottom: 20px;
+  }
+  .circulo {
+ 
+    width: 100%;
+    height: 100%;
+    top: 300px;
+    left: 0;
+    margin:20px;
+    clip-path: circle(250px at center 325px);
+  
+}
+  .botao-menu{
+    margin:20px;
+  }
+  
   h1 {
     font-size: 32px;
   }
