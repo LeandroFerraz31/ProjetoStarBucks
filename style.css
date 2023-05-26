@@ -6,26 +6,20 @@
 }
 
 .center {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 2000px;
-  margin: 0 auto;
-  padding: 0 2%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #bf48ad;
+  top: 0;
+  left: 0;
+  clip-path: circle(600px at right 800px);
+  z-index: -1;
 }
 
-html,
 body {
   padding-top: 20px;
   padding-right: 100px;
   padding-left: 100px;
-}
-
-header {
-  padding: 39px 0;
-}
-
-header .menu {
-  margin-top: -55px;
 }
 
 .logo {
@@ -39,9 +33,7 @@ header .menu {
 }
 
 section .sobre {
-  height: auto;
-  /* Alterado para "auto" para se ajustar ao conteúdo */
-  position: relative;
+  width: 600px;
 }
 
 .starbucks {
@@ -49,19 +41,10 @@ section .sobre {
 }
 
 .extras {
-  position: relative;
-  /* Alterado para relativo para respeitar o fluxo do documento */
-  width: 100%;
-  /* Alterado para 100% para se ajustar ao contêiner */
-  height: auto;
-  /* Alterado para "auto" para se ajustar ao conteúdo */
-  border-top-left-radius: 55%;
-  /* Corrigido para 55% para manter a forma elíptica */
-  background-color: #017143;
-  text-align: center;
-  /* Alterado para centralizar o conteúdo */
-  padding: 150px 0;
-  /* Alterado para um valor menor para melhorar a aparência */
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 250px;
 }
 
 .social-media {
@@ -84,17 +67,22 @@ section .sobre {
   /* Alterado para centralizar o conteúdo */
 }
 
-.texto-sobre h1 {
+h1 {
   color: #333;
   font-size: 60px;
   font-weight: 500;
   /* Alterado para um valor menor para melhorar a aparência */
 }
+span {
+  color: #017143;
+  font-size: 70px;
+  font-weight: 900;
+}
 
 .texto-sobre p {
   font-size: 16px;
   /* tamanho da fonte */
-  /* Alterado para centralizar o conteúdo */
+  
 }
 
 .texto-sobre button {
