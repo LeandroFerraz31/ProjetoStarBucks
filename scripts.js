@@ -12,6 +12,6 @@ function trocaCor(cor) {
     circulo.style.background = cor
 }
 
-function mudarcor(cor) {
+function trocaCor(cor) {
     estilo.style.color = cor
 }
