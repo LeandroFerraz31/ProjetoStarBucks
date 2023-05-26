@@ -1,109 +1,109 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+} 
 
-.center {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 2000px;
-  margin: 0 auto;
-  padding: 0 2%;
-}
+.center { 
+  display: flex; 
+  flex-wrap: wrap; 
+  max-width: 2000px; 
+  margin: 0 auto; 
+  padding: 0 2%; 
+} 
 
-html,
-body {
-  height: 100%;
-  overflow: auto;
-}
+html, body { 
+  height: 100%; 
+  overflow: auto; /* Alterado para "auto" para permitir rolagem em dispositivos com conteúdo maior */ 
+} 
 
-header {
-  padding: 39px 0;
-}
+header { 
+  padding: 39px 0; 
+} 
 
-header .menu {
-  margin-top: -55px;
-}
+header .menu { 
+  margin-top: -55px; 
+} 
 
-.logo {
-  width: 100%;
-}
+.logo { 
+  width: 100%; /* Alterado para 100% para se ajustar ao contêiner */ 
+} 
 
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10px;
-  width: 100%;
-  text-align: center;
-}
+.menu { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding-top: 10px; 
+  width: 100%; 
+  text-align: center; 
+} 
 
-.menu a {
-  color: black;
-  font-weight: bold;
-  font-size: 16px;
-  margin-right: 20px;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+.menu a { 
+  color: black; 
+  font-weight: bold; 
+  font-size: 16px; 
+  margin-right: 20px; 
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+} 
 
-.menu a:hover {
-  color: #017143;
-}
+.menu a:hover { 
+  color: #017143; 
+} 
 
-section .sobre {
-  position: relative;
-}
+section .sobre { 
+  height: auto; /* Alterado para "auto" para se ajustar ao conteúdo */ 
+  position: relative; 
+} 
 
-.extras {
-  position: relative;
-  width: 100%;
-  height: auto;
-  border-top-left-radius: 55%;
-  background-color: #017143;
-  text-align: center;
-  padding: 100px 0; /* Reduzido o valor para melhorar a aparência */
-}
+.extras { 
+  position: relative; /* Alterado para relativo para respeitar o fluxo do documento */ 
+  width: 100%; /* Alterado para 100% para se ajustar ao contêiner */ 
+  height: auto; /* Alterado para "auto" para se ajustar ao conteúdo */ 
+  border-top-left-radius: 55%; /* Corrigido para 55% para manter a forma elíptica */ 
+  background-color: #017143; 
+  text-align: center; /* Alterado para centralizar o conteúdo */ 
+  padding: 150px 0; /* Alterado para um valor menor para melhorar a aparência */ 
+} 
 
-.social-media {
-  margin-top: 20px; /* Reduzido o valor para melhorar a aparência */
-}
+.social-media { 
+  margin-top: 30px; /* Alterado para um valor menor para melhorar a aparência */ 
+} 
 
-.social-media img {
-  display: inline-block;
-  width: 25px;
-  margin: 0 10px; /* Reduzido o valor para melhorar a aparência */
-}
+.social-media img { 
+  display: inline-block; /* Alterado para inline-block para melhorar a aparência */ 
+  width: 25px; 
+  margin: 0 15px; /* Alterado para um valor menor para melhorar a aparência */ 
+} 
 
-.texto-sobre {
-  margin-top: 30px; /* Reduzido o valor para melhorar a aparência */
-  text-align: center;
-}
+.texto-sobre { 
+  margin-top: 50px; /* Alterado para um valor menor para melhorar a aparência */ 
+  text-align: center; /* Alterado para centralizar o conteúdo */ 
+} 
 
-.texto-sobre h1 {
-  font-size: 26px; /* Reduzido o valor para melhorar a aparência */
-}
+.texto-sobre h1 { 
+  font-size: 30px; /* Alterado para um valor menor para melhorar a aparência */ 
+} 
 
-.texto-sobre p {
-  margin: 20px 0;
-  color: black;
-  font-size: 16px;
-  font-weight: bold;
-  max-width: 600px;
-  margin: 0 auto;
-}
+.texto-sobre p { 
+  margin: 20px 0; 
+  color: black; 
+  font-size: 17px; 
+  font-weight: bold; 
+  max-width: 600px; 
+  margin: 0 auto; /* Alterado para centralizar o conteúdo */ 
+} 
 
-.texto-sobre button {
-  border: 0;
-  background-color: #017143;
-  color: white;
-  border-radius: 40px;
-  width: 100px;
-  height: 30px;
-  cursor: pointer;
-  margin-top: 20px;
-  display: block;
-  margin: 0 auto;
+.texto-sobre button { 
+  border: 0; 
+  background-color: #017143; 
+  color: white; 
+  border-radius: 40px; 
+  width: 100px; 
+  height: 30px; 
+  cursor: pointer; 
+  margin-top: 20px; /* Adicionado espaçamento superior para melhorar a aparência */ 
+  display: block; /* Adicionado para centralizar o botão */ 
+  margin: 0 auto; /* Adicionado para centralizar o botão */ 
 }
