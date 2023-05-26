@@ -5,23 +5,28 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.center {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 2000px;
-  margin: 0 auto;
-  padding: 0 2%;
-}
-
 body {
   padding-top: 20px;
   padding-right: 100px;
   padding-left: 100px;
 }
 
-.logo {
-  width: 80px;
-  /* Alterado para 100% para se ajustar ao contêiner */
+.container {
+  width: 100%; /* largura */
+  display: flex; /* permite que alteremos a posição dos elementos na tela */
+  justify-content: space-between; /* permite justificar / alinhar os componentes na horizontal */
+  align-items: center; /* permite alinhar os componentes na vertical*/
+}
+
+.texto-sobre {
+  width: 600px;
+}
+
+.copo-imagem {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 250px;
 }
 
 .menu {
@@ -29,22 +34,74 @@ body {
   justify-content: center;
 }
 
-section .sobre {
-  width: 600px;
+h1 {
+  color: #333;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+span {
+  color: #017143;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+p {
+  font-size: 16px;
+  /* tamanho da fonte */
+}
+
+button {
+  background: #017143;
+  /* background -> fundo do elemento */
+  color: white;
+  /* cor do texto */
+  border-radius: 40px;
+  /* arredondamento da borda */
+  border: none;
+  /* borda do elemento */
+  cursor: pointer;
+  /* cursor do mouse */
+  padding: 10px;
+  /* espaçamento interno */
+  margin-top: 20px;
+}
+button:hover{
+  background: #333;
+  color: #017143;
+}
+
+.logo {
+  width: 80px;
 }
 
 .starbucks {
   width: 340px;
 }
 
-.extras {
-  width: 600px;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 250px;
+.botao-menu {
+  width: 60px;
+  transition: 1s;
+  cursor: pointer;
+  margin: 10px;
 }
 
-.social-media {
+.botao-menu:hover {
+  transform: translateY(-25px);
+}
+
+.circulo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #bf48ad;
+  top: 0;
+  left: 0;
+  clip-path: circle(600px at right 800px);
+  z-index: -1;
+}
+
+footer{
   margin-top: 30px;
   /* Alterado para um valor menor para melhorar a aparência */
 }
@@ -55,44 +112,4 @@ section .sobre {
   width: 25px;
   margin: 0 15px;
   /* Alterado para um valor menor para melhorar a aparência */
-}
-
-.texto-sobre {
-  margin-top: 50px;
-  /* Alterado para um valor menor para melhorar a aparência */
-  text-align: center;
-  /* Alterado para centralizar o conteúdo */
-}
-
-h1 {
-  color: #333;
-  font-size: 60px;
-  font-weight: 500;
-  /* Alterado para um valor menor para melhorar a aparência */
-}
-span {
-  color: #017143;
-  font-size: 70px;
-  font-weight: 900;
-}
-
-.texto-sobre p {
-  font-size: 16px;
-  /* tamanho da fonte */
-  
-}
-
-.texto-sobre button {
-  border: 0;
-  background-color: #017143;
-  color: white;
-  width: 60px;
-  transition: 1s;
-  cursor: pointer;
-  margin: 10px;
-  /* Adicionado para centralizar o botão */
-}
-
-.botao-menu:hover {
-  transform: translateY(-25px);
 }
