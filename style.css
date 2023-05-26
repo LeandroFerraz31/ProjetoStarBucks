@@ -12,10 +12,14 @@ body {
 }
 
 .container {
-  width: 100%; /* largura */
-  display: flex; /* permite que alteremos a posição dos elementos na tela */
-  justify-content: space-between; /* permite justificar / alinhar os componentes na horizontal */
-  align-items: center; /* permite alinhar os componentes na vertical*/
+  width: 100%;
+  /* largura */
+  display: flex;
+  /* permite que alteremos a posição dos elementos na tela */
+  justify-content: space-between;
+  /* permite justificar / alinhar os componentes na horizontal */
+  align-items: center;
+  /* permite alinhar os componentes na vertical*/
 }
 
 .texto-sobre {
@@ -66,7 +70,8 @@ button {
   /* espaçamento interno */
   margin-top: 20px;
 }
-button:hover{
+
+button:hover {
   background: #333;
   color: #017143;
 }
@@ -101,15 +106,19 @@ button:hover{
   z-index: -1;
 }
 
-footer{
-  margin-top: 30px;
-  /* Alterado para um valor menor para melhorar a aparência */
+footer {
+ margin-top: 20px;
+  /* Reduzido o valor para melhorar a aparência */
+
+
+  display: flex;
+  /* Adicionado para usar flexbox */
+
+  justify-content: center;
+  /* Adicionado para centralizar as imagens horizontalmente */
 }
 
 .social-media img {
-  display: inline-block;
-  /* Alterado para inline-block para melhorar a aparência */
   width: 25px;
-  margin: 0 15px;
-  /* Alterado para um valor menor para melhorar a aparência */
+  margin: 0 10px;
 }
