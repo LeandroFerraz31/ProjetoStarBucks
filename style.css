@@ -122,3 +122,51 @@ footer {
   width: 25px;
   margin: 0 10px;
 }
+/* Modificações responsivas */
+
+@media (max-width: 768px) {
+  body {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .texto-sobre,
+  .copo-imagem {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  span {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  button {
+    width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  span {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
