@@ -6,13 +6,16 @@
 }
 
 body {
+  
   padding-top: 20px;
   padding-right: 100px;
   padding-left: 100px;
-  overflow-x: hidden;
+  overflow-x:hidden;
+  
 }
 
 .container {
+  height:100vh;
   width: 100%;
   /* largura */
   display: flex;
@@ -88,10 +91,11 @@ button:hover {
 }
 
 .botao-menu {
-  width: 60px;
+  width: 50px;
   transition: 1s;
   cursor: pointer;
-  margin: 10px;
+  margin: 30px ;
+  margin-top:120px;
 }
 
 .botao-menu:hover {
@@ -123,44 +127,39 @@ footer {
 
 .social-media img {
   width: 25px;
-  margin: 0 10px;
+  margin: 0 13px;
+  
 }
 /* Modificações responsivas */
 
-@media (max-width: 768px) {
-  body {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
+@media (min-width: 667px) and (max-width: 768px) {
+  
   .container {
     flex-direction: column;
     align-items: center;
   }
 
   .copo-imagem {
-   width: 100%;
+        width: 100%;
     max-width: 600px;
-    justify-content: center;
+    justify-content:center;
     margin-top: 0;
     transition: 1s;
-    transform: translateY(-2px)
-    
-    
-  }
-  .texto-sobre {
-    text-align: justify;
-    margin-bottom: 20px;
+    transform: translateY(-2px);
   }
   .circulo {
     width: 100%;
     height: 100%;
     top: 300px;
     left: 0;
-    margin:0;
+    margin: 0;
     clip-path: circle(250px at center 420px);
-  
-}
+  }
+  .texto-sobre {
+    left: 3%;
+    width: 100%;
+    max-width: 600px;
+  }
 
   h1 {
     font-size: 40px;
@@ -171,51 +170,48 @@ footer {
   }
 
   p {
-    word-wrap: break-word;
-    word-break: break-all;
     font-size: 16px;
   }
 
   button {
-    width: 150px;
+    width: 100px;
   }
 }
 
-@media (max-width: 768px) {
-  
-  .container {
-     
+@media (min-width: 375px) and (max-width: 667px) {
+.container {
+    
     flex-direction: column;
     align-items: center;
   }
-
   .copo-imagem {
-   width: 100%;
+    width: 100%;
     max-width: 600px;
     justify-content: center;
     margin-top: 0;
     transition: 1s;
-    transform: translateY(-2px)
-    
-    
+    transform: translateY(-2px);
   }
+
   .texto-sobre {
-    text-align: justify;
-    margin-bottom: 20px;
+    left: 3%;
+    width: 100%;
+    max-width: 600px;
   }
+
   .circulo {
- 
     width: 100%;
     height: 100%;
     top: 300px;
     left: 0;
-    margin:0;
-    clip-path: circle(250px at center 355px);
-  
-}
-  .botao-menu{
-    margin:20px;
+    margin: 0;
+    clip-path: circle(250px at center 325px);
   }
+
+  .botao-menu {
+    margin: 20px;
+  }
+
   h1 {
     font-size: 32px;
   }
@@ -225,103 +221,57 @@ footer {
   }
 
   p {
-    word-wrap: break-word;
-    word-break: break-all;
-    font-size: 14px;
-  }
-}
-@media(min-width: 375px) and (max-width: 667px) {
-  
-   .container {
-     display: block;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .copo-imagem {
-   width: 100%;
-    max-width: 600px;
-    justify-content: center;
-    margin-top: 0;
-    transition: 1s;
-    transform: translateY(-2px)
-    
-    
-  }
-  .texto-sobre {
-    text-align: justify;
-    margin-bottom: 20px;
-  }
-  .circulo {
-    width: 100%;
-    height: 100%;
-    top: 300px;
-    left: 0;
-    margin:0;
-    clip-path: circle(250px at center 325px);
-  
-}
-  .botao-menu{
-    margin:20px;
-  }
-  
-  h1 {
-    font-size: 24px;
-  }
-
-  span {
-    font-size: 34px;
-  }
-
-  p {
     font-size: 12px;
   }
 }
+
 @media (min-width: 256px) and (max-width: 568px) {
-  
-   .container {
-     display: block;
+  .container {
+    
     flex-direction: column;
     align-items: center;
   }
 
   .copo-imagem {
-   width: 100%;
+        width: 100%;
     max-width: 600px;
     justify-content: center;
     margin-top: 0;
     transition: 1s;
-    transform: translateY(-2px)
-    
-    
+    transform: translateY(-2px);
   }
-  .texto-sobre {
-    text-align: justify;
-    margin-bottom: 20px;
+
+  .texto-sobre  {
+    left:3;
+        width: 250%;
+    max-width: 300px;
+
   }
+
   .circulo {
-    
-    width: 100%;
+        width: 100%;
+    max-width: 600px;
     height: 100%;
-    top: 300px;
+    top: 400px;
     left: 0;
-    margin:0;
-    clip-path: circle(250px at center 325px);
-}
-  .botao-menu{
-    margin:20px;
+    margin: 0;
+    clip-path: circle(200px at center 250px);
   }
-  
+
+  .botao-menu {
+    padding-top:100px;
+    margin: -10px 5%;
+  }
+
   h1 {
     font-size: 24px;
   }
 
   span {
-    font-size: 34px;
+    font-size: 28px;
   }
 
   p {
-    word-wrap: break-word;
     font-size: 12px;
   }
 }
